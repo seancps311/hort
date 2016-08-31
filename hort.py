@@ -3,10 +3,18 @@
 
 import random
 
-flip = random.randint(0, 1)
-if (flip == 0):
-    flipWord = "heads"
-else:
-    flipWord = "tails"
+numFlips = int(input("How many flips? "))
 
-print("I flipped a coin and got ", flipWord, ".")
+flipCount = 0
+while (flipCount < numFlips):
+
+	flip = random.randint(0, 1)
+	if (flip == 0):
+    		flipWord = "heads"
+	else:
+    		flipWord = "tails"
+
+	print("I flipped a coin and got ", flipWord, ".")
+
+	flipCount += 1
+
